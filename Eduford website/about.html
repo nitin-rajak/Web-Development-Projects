@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-----  About Us content ----->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae dolores accusamus
+                    accusantium ipsum nulla unde dignissimos, sequi fugit laborum id, laudantium eveniet eum at.</p>
+                <a href="" class="hero-btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat repellendus, <br>doloribus voluptatem
+            facilis
+            sint vel animi perspiciatis ullam aliquam numquam.</p>
+        <div class="icons">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-twitter"></i>
+        </div>
+        <p>Made By Nitin</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
